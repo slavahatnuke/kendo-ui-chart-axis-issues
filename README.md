@@ -2,7 +2,8 @@
 
 This is simple example that shows KendoUI charts issues with dates `< 1970`. 
 The axis of the graph is in the center of chart and passes through the name/title of the axis and it looks so so :)
- 
+
+
 ![Screenshot](./screen.png)
 
 ### Component
@@ -93,3 +94,10 @@ export class AppComponent {
 
 </kendo-chart>
 ```
+
+### How to start
+- `git clone git@github.com:slavahatnuke/kendo-ui-chart-axis-issues.git`
+- `cd kendo-ui-chart-axis-issues`
+- `npm install`
+- `npm start` 
+- open [http://localhost:4200/](http://localhost:4200/)
