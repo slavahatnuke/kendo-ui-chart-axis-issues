@@ -1,6 +1,7 @@
 # Kendo UI Chart Axis Issues
 
-This is simple example that shows KendoUI charts issues with dates `< 1970`
+This is simple example that shows KendoUI charts issues with dates `< 1970`. 
+The axis of the graph is in the center of chart and passes through the name/title of the axis and it looks so so :)
  
 ![Screenshot](./screen.png)
 
