@@ -1,3 +1,61 @@
-<h1>
-  {{title}}
-</h1>
+<h1>{{title}}</h1>
+
+<button kendoButton (click)="onButtonClick()" [primary]="true">My Kendo UI Button</button>
+
+<kendo-chart *ngIf="data" [style.width.%]="100" [style.height.%]="100">
+  <kendo-chart-axis-defaults
+    [majorTicks]="{visible: false}"
+    [line]="{ color: '#656565' }">
+    <kendo-chart-axis-defaults-labels font="10px sans-serif">
+    </kendo-chart-axis-defaults-labels>
+  </kendo-chart-axis-defaults>
+
+  <kendo-chart-title [text]="data.title"
+                     color="#656565"
+                     font="14px Helvetica, Arial, sans-serif">
+  </kendo-chart-title>
+
+  <kendo-chart-legend position="bottom" orientation="horizontal"></kendo-chart-legend>
+
+  <kendo-chart-tooltip>
+    <ng-template kendoChartSeriesTooltipTemplate let-value="value">
+      <b>{{value.x | date}}:</b><br>{{value.y.toFixed(2)}}
+    </ng-template>
+  </kendo-chart-tooltip>
+
+  <kendo-chart-x-axis>
+    <!--[baseUnit]="'years'"-->
+    <kendo-chart-x-axis-item
+      [type]="'date'"
+      [labels]="{step: 2}"
+      [majorGridLines]="{visible: false}">
+    </kendo-chart-x-axis-item>
+  </kendo-chart-x-axis>
+
+  <kendo-chart-y-axis>
+    <kendo-chart-y-axis-item
+      [title]="{
+              text: 'Trillion Btu',
+              position: 'center',
+              margin: 5,
+              padding: 0,
+              font: '10px bold Helvetica, Arial, sans-serif'
+            }"
+      [type]="'numeric'"
+    >
+
+    </kendo-chart-y-axis-item>
+  </kendo-chart-y-axis>
+
+  <kendo-chart-series>
+    <kendo-chart-series-item
+      type="scatterLine"
+      [style]="'smooth'"
+      [markers]="{size: 3}"
+      [width]="2"
+      [data]="data"
+      [name]="'Label'">
+    </kendo-chart-series-item>
+  </kendo-chart-series>
+
+</kendo-chart>

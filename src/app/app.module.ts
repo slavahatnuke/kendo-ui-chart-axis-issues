@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {ButtonsModule} from "@progress/kendo-angular-buttons";
+import {ChartsModule} from "@progress/kendo-angular-charts";
 
 @NgModule({
   declarations: [
@@ -12,7 +15,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    BrowserAnimationsModule,
+    ButtonsModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
