@@ -24,10 +24,14 @@
   </kendo-chart-tooltip>
 
   <kendo-chart-x-axis>
+
+
     <kendo-chart-x-axis-item
       [type]="'date'"
       [labels]="{step: 2}"
-      [majorGridLines]="{visible: false}">
+      [majorGridLines]="{visible: false}"
+      [axisCrossingValue]="minXDate"
+    >
     </kendo-chart-x-axis-item>
   </kendo-chart-x-axis>
 

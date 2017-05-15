@@ -101,3 +101,10 @@ export class AppComponent {
 - `npm install`
 - `npm start` 
 - open [http://localhost:4200/](http://localhost:4200/)
+
+
+## Fixed
+
+![up1](./up1.png)
+![up2](./up3.png)
+![up3](./up3.png)
