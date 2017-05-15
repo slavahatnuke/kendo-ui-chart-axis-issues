@@ -106,5 +106,5 @@ export class AppComponent {
 ## Fixed
 
 ![up1](./up1.png)
-![up2](./up3.png)
+![up2](./up2.png)
 ![up3](./up3.png)
