@@ -113,5 +113,6 @@ Spec: [http://www.telerik.com/kendo-angular-ui/components/charts/api/XAxis/](htt
 * `src/app/app.component.ts`
 ![up2](./up2.png)
 
-result
+* result
+
 ![up3](./up3.png)
