@@ -105,6 +105,7 @@ export class AppComponent {
 
 ## Fixed
 
+Spec: [http://www.telerik.com/kendo-angular-ui/components/charts/api/XAxis/](http://www.telerik.com/kendo-angular-ui/components/charts/api/XAxis/)
 
 * `src/app/app.component.html`
 ![up1](./up1.png)
