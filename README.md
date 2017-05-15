@@ -105,6 +105,12 @@ export class AppComponent {
 
 ## Fixed
 
+
+* `src/app/app.component.html`
 ![up1](./up1.png)
+
+* `src/app/app.component.ts`
 ![up2](./up2.png)
+
+result
 ![up3](./up3.png)
